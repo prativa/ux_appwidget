@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/full_widget"
+    android:layout_width="fill_parent"
+    android:layout_height="140dp"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="20dp"
+    android:background="#3BB9FF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:background="#FFFFFF" >
+
+        <ImageButton
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/app_wid_prev_button_selector" />
+
+        <TextView
+            android:id="@+id/reddishBorderLeft"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/btnPrev"
+            android:background="#D25B1A" />
+
+        <TextView
+            android:id="@+id/whiteBorderLeft"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@id/reddishBorderLeft"
+            android:textColor="@android:color/black"
+            android:textSize="17dp" />
+
+        <ImageButton
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/app_wid_next_button_selector" />
+
+        <TextView
+            android:id="@+id/appwidget_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toLeftOf="@id/btnNext"
+            android:layout_toRightOf="@id/btnPrev"
+            android:gravity="center_horizontal"
+            android:text="Motivational Quotes"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/whiteBorder"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/btnNext"
+            android:background="#FEFBF5" />
+
+        <TextView
+            android:id="@+id/reddishBorder"
+            android:layout_width="0.5dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toLeftOf="@id/whiteBorder"
+            android:background="#D25B1A" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_appwid_detail_msg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/txt_messageContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:ellipsize="end"
+            android:text="afsaskldjfkajsdfkajsdflkjasdkfjd afsaskldjfkajsdfkajsdflkjasdkfjd afsaskldjfkajsdfkajsdflkjasdkfjd afsaskldjfkajsdfkajsdflkjasdkfjd afsaskldjfkajsdfkajsdflkjasdkfjd afsaskldjfkajsdfkajsdflkjasdkfjd"
+            android:textColor="@android:color/black"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>
